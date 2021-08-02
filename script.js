@@ -10,7 +10,7 @@ function setData() {
 }
 
 function getDate() {
-    //java function for dates
+    //java function for dates https://www.w3schools.com/jsref/jsref_getdate.asp
     var weekday = weekdays[d.getDay()];
     var month = months[d.getMonth()];
     var day = d.getDate();
@@ -24,10 +24,20 @@ function getDate() {
 }
 
 function getData() {
+    //create variable that identifies each input and retrieve the data
+    for (var i = 9; i < 18; i++) {
+        var data = localStorage.getItem(i);
 
 }
 function highlightRows() {
-    
+
+}
+
+function save(event) {
+    //on event change id to extract the hour/number to correlate the save button id to correct text area.
+    var hour = event.id.replace('savebutton_', '');
+    var text = document.getElementById(`textarea_${hour}`).value;
+    localStorage.setItem(hour, text);
 }
 //declare button in HTML with set value in accordance with timeslot
 //get the value from the event target (the button)
