@@ -37,7 +37,7 @@ function highlightRows() {
 
 function save(event) {
     //on event change id to extract the hour/number to correlate the save button id to correct text area.
-    var hour = event.id.replace('savebutton_', '');
+    var hour = event.id.replace('saveBtn_', '');
     var text = document.getElementById(`textarea_${hour}`).value;
     localStorage.setItem(hour, text);
     console.log(text);
