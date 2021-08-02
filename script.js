@@ -27,7 +27,9 @@ function getData() {
     //create variable that identifies each input and retrieve the data
     for (var i = 9; i < 18; i++) {
         var data = localStorage.getItem(i);
-
+        if (data) document.getElementById(`textarea_${i}`).innerHTML = data;
+        console.log(data);
+    }
 }
 function highlightRows() {
 
@@ -38,10 +40,5 @@ function save(event) {
     var hour = event.id.replace('savebutton_', '');
     var text = document.getElementById(`textarea_${hour}`).value;
     localStorage.setItem(hour, text);
+    console.log(text);
 }
-//declare button in HTML with set value in accordance with timeslot
-//get the value from the event target (the button)
-//declare and input for each time slot with a unique id "timeAm-input"
-//set data to local storage
-//get the input value for the time slot associated with the button (using the event.target.value)
-
