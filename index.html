@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,18 +32,104 @@
     <div class="container">
       <!-- Timeblocks go here -->
     <div class="time-block row">
-            <div class="col-2 hour" id="hour">
-                <p class="nineAM">9am</p>
-            </div>
-            <div class="col-8 textarea" id="textInput">
-                    this is text.
-            </div>
-            <div class="col-2" id="submit">
-                <button class="saveBtn">Save Task</button>
-            </div>
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_9">9am</p>
+        </div>
+        <div class="col-8 textarea">
+            <textarea class="col-8 textarea" id="textarea_9"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_9">Save Task</button>
+        </div>
     </div>
-    
-
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_10">10am</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_10"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_10">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_11">11am</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_11"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_11">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_12">12pm</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_12"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_12">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_1">1pm</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_1"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_1">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_2">2pm</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_2"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="textarea_2">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_3">3pm</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_3"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_3">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_4">4pm</p>
+        </div>
+        <div class="col-8 textarea">
+            <textarea class="col-8 textarea" id="textarea_4"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_4">Save Task</button>
+        </div>
+    </div>
+    <div class="time-block row">
+        <div class="col-2" id="hour">
+            <p class="hour" id="hour_5">5pm</p>
+        </div>
+        <div class="col-8 textarea" >
+            <textarea class="col-8 textarea" id="textarea_5"></textarea>
+        </div>
+        <div class="col-2" id="submit">
+            <button onclick="save(this)" class="saveBtn" id="saveBtn_5">Save Task</button>
+        </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

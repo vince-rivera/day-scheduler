@@ -1,23 +1,17 @@
-var tasks = {};
+var d = new Date();
+var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 //when page loads
 //get data from localstorage
-var loadTasks = function() {
-    tasks = JSON.parse(localStorage.getItem("tasks"));
-    // if nothing in localStorage, create a new object to track all task status arrays
-    if (!tasks) {
-      tasks = {};
-    }
 //set the inputs text value according to their time slots
-$(".text-area").on("click", "p", function() {
-    var newTask = $(this)
-    .text()
-    .trim();
-
-})
 // add an onclick listener to all buttons
-$(".saveBtn").on("click", function() {
-    localStorage.setItem("NewTask", JSON.stringify(newTask));
-})
+
+// function saveTasks() {
+//     var text = document.getElementById(hourName).value;
+//      console.log(text);   
+
+    
+//  };
 //when buttons are clicked prevent default and call handleSaves functions
 
     //declare button in HTML with set value in accordance with timeslot
@@ -26,17 +20,3 @@ $(".saveBtn").on("click", function() {
     //set data to local storage
     //get the input value for the time slot associated with the button (using the event.target.value)
 
-
-
-
-
-// $("#bttn").on("click", function(e)) {
-//     e.preventdefault();
-//     HandleSaves();
-// }
-
-// function HandleSaves(event) {
-//     let hourName = event.target.value
-//     let input = $(hourName + "-input").value();
-//     localStorage.setItem(hourName, JSON.stringify(input))
-// }
